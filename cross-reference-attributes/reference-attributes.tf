@@ -22,3 +22,8 @@ resource "aws_security_group" "terraform-sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+output "aws_eip" {
+  value = "http://${aws_eip.terraform-eip.public_ip}:8080"
+
+}

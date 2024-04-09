@@ -1,0 +1,6 @@
+instance_type = "t2.micro"
+image_ami     = "ami-0187337106779cdf8"
+
+# you can give custom name to tfvars file but 
+# you have to use argument -var-file to pass the name with the command
+# remove the .text extention

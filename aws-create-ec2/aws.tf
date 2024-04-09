@@ -1,7 +1,7 @@
 resource "aws_instance" "serverbyt" {
   ami           = var.image_ami
   # instance_type = var.instance_type_list[count.index]
-  instance_type = var.instance_type_list[0]
+  instance_type = var.instance_types["micro"]
   # instance_type = var.list[0]
 
   tags = {

@@ -8,9 +8,9 @@ variable "image_ami" {
   type    = string
 }
 
-variable "list" {
+variable "instance_type_list" {
   type    = list(string)
-  default = ["m5.large", "m5.xlarge", "t2.medium"]
+  default = ["dev", "int", "prod"]
 }
 
 variable "instance_types" {

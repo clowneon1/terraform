@@ -4,7 +4,7 @@ variable "image_ami" {
 }
 
 variable "is_test" {
-  type = bool
+  type    = bool
   default = true
 }
 
@@ -15,4 +15,14 @@ variable "instance_types" {
     large = "t2.large"
     small = "t2.small"
   }
+}
+
+variable "name" {
+  default = "default-name"
+  type    = string
+}
+
+variable "default" {
+  default = "default-ec2"
+  type    = string
 }

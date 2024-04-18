@@ -24,4 +24,3 @@ data "aws_ami" "instance_ami" {
   }
 }
 
-# Environment variable TF_LOG=TRACE and TF_LOG_PATH are used for logs and storing logs

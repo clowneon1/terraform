@@ -2,4 +2,12 @@
 
 ---
 
-Retrieve output values from your Terraform configuration with `terraform output`. Use `terraform output <output_name>` to get a specific output value.
+Retrieve output values from your Terraform configuration:
+```bash
+terraform output
+```
+
+To get a specific output value:
+```bash
+terraform output <output_name>
+```

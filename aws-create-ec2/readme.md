@@ -24,4 +24,4 @@
 
 6. You can only apply this plan if the .tfstate file is unchanged and it does not require approval
 
- 
+7. You can use -refresh=false to prevent terraform from refreshing the state of the system when planning. 

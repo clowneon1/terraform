@@ -16,3 +16,12 @@
    ```
 
 4. Retrieve detailed logs and plan from file.
+
+5. Apply Terraform plan from a file:
+   ```bash
+   terraform apply "terraformplan"
+   ```
+
+6. You can only apply this plan if the .tfstate file is unchanged and it does not require approval
+
+ 

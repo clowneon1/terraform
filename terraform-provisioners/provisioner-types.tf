@@ -28,8 +28,10 @@ resource "aws_instance" "serverbyt" {
     command = "echo ${aws_instance.serverbyt.private_ip} >> private_ips.txt"
   }
 
+
   provisioner "remote-exec" {
     inline = ["sudo yum -y install nano"]
+    on_failure = continue # don't stop if there is an error here
   }
   provisioner "remote-exec" {
     when   = destroy
@@ -44,5 +46,5 @@ resource "aws_instance" "serverbyt" {
     private_key = file("./terraform.pem")
   }
 #if this provisioner fails in creation time for some reason the resource is marked as tained.
-
+#use on_failure = continue | fail (default) to handle failure behavior 
 }

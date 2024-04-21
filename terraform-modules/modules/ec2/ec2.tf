@@ -9,3 +9,5 @@ resource "aws_instance" "server_from_module" {
 
 # using variables lets you change the configuration as where 
 # we are using the module we have no control over the module configurations.
+# use locals insted of vairable when you want to remove repeatative config 
+# but don't want the pesron using the module to be able to change it.

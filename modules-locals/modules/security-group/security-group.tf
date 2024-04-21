@@ -25,6 +25,10 @@ resource "aws_security_group" "elb-sg" {
 
 }
 
+output "ec2_security_id" {
+  value = aws_security_group.ec2-sg.id
+} #output the ec2 id so that we can use it as  a reference in other resources
+
 locals {
   app_port = 8443
 }

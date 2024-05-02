@@ -6,3 +6,4 @@
 *.tfvars
 *.pem
 *.pek
+crash.log

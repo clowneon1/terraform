@@ -4,3 +4,5 @@ resource "time_sleep" "wait_300_seconds" {
 # it knows that the lock is accquired by by some process with the help of file ".terraform.tfstate.lock.info" 
 # run this first then do a terraform plan in same directory from another terminal.
 # lock is accquired by the process which is currently working with the terraform state file.
+# terraform have a force-unlock command which should be used like a nuclear weapon
+# yeah it's there but you should not use it.

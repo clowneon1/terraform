@@ -7,5 +7,5 @@ terraform {
   }
 }
 #we need to configure a dynamodb table which terraform will use to perform state locking.
-  
-}
+
+

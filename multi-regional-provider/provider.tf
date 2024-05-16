@@ -14,6 +14,8 @@ provider "aws" {
 
 # you can use alias to create multiple provider config for same provider.
 provider "aws" {
-  alias  = "north-virginia"
-  region = "us-east-1"
+  alias   = "north-virginia"
+  region  = "us-east-1"
+  profile = "prod-account"
+  # additionally you can use profile config to set diffrent aws profiles (accounts) for diffrent configurations
 }
